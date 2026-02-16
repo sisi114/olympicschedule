@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Canada Olympic Schedule</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #D80621;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D80621;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    color: #D80621;
+    margin-bottom: 40px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.event-card {
+    background: white;
+    border-left: 6px solid #D80621;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: #D80621;
+}
+
+.medal-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.medal-table th, .medal-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.medal-table th {
+    background-color: #D80621;
+    color: white;
+}
+
+.medal-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #D8
