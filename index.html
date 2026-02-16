@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Team Canada Olympic Schedule</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
 <style>
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #D80621;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -32,6 +33,7 @@ nav {
     gap: 30px;
     padding: 15px;
     font-weight: 600;
+    border-bottom: 3px solid #D80621;
 }
 
 nav a {
@@ -45,7 +47,7 @@ nav a:hover {
 
 .section {
     padding: 50px 20px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -57,7 +59,7 @@ nav a:hover {
 
 .schedule-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
 }
 
@@ -65,8 +67,8 @@ nav a:hover {
     background: white;
     border-left: 6px solid #D80621;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
     transition: transform 0.2s ease;
 }
 
@@ -79,13 +81,18 @@ nav a:hover {
     color: #D80621;
 }
 
+.event-card p {
+    margin: 6px 0;
+    font-size: 0.95em;
+}
+
 .medal-table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .medal-table th, .medal-table td {
@@ -103,4 +110,202 @@ nav a:hover {
 }
 
 footer {
-    background-color: #D8
+    background-color: #D80621;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍁 Team Canada Olympic Schedule</h1>
+    <p>Milano-Cortina 2026</p>
+</header>
+
+<nav>
+    <a href="#schedule">Schedule</a>
+    <a href="#medals">Medals</a>
+</nav>
+
+<section id="schedule" class="section">
+<h2>🇨🇦 Competition Schedule</h2>
+
+<div class="schedule-grid">
+
+<!-- FEB 4 -->
+<div class="event-card">
+<h3>Wednesday, February 4</h3>
+<p>02:30 AM – Alpine Skiing (Men) Training</p>
+<p>10:05 AM – Curling Mixed Doubles vs Czechia</p>
+</div>
+
+<!-- FEB 5 -->
+<div class="event-card">
+<h3>Thursday, February 5</h3>
+<p>02:30 AM – Alpine Skiing (Men) Training</p>
+<p>05:35 AM – Curling vs Norway</p>
+<p>08:00 AM – Luge Women Training</p>
+<p>10:05 AM – Curling vs Italy</p>
+<p>10:30 AM – Snowboard Big Air</p>
+</div>
+
+<!-- FEB 6 -->
+<div class="event-card">
+<h3>Friday, February 6</h3>
+<p>12:55 AM – Figure Skating Team Ice Dance</p>
+<p>01:05 AM – Curling vs USA</p>
+<p>02:30 AM – Alpine Training (Men & Women)</p>
+<p>02:35 AM – Pairs Short Program</p>
+<p>04:35 AM – Women Short Program</p>
+</div>
+
+<!-- FEB 7 -->
+<div class="event-card">
+<h3>Saturday, February 7</h3>
+<p>01:05 AM – Curling vs Great Britain</p>
+<p>01:30 AM – Freestyle Slopestyle Qual</p>
+<p>02:30 AM – Alpine Downhill</p>
+<p>04:00 AM – XC Ski Skiathlon (Women)</p>
+<p>07:00 AM – Speed Skating 3000m</p>
+<p>08:45 AM – Ski Jumping NH</p>
+<p>10:05 AM – Curling vs Estonia</p>
+<p>12:10 PM – Women’s Hockey vs Switzerland</p>
+</div>
+
+<!-- FEB 8 -->
+<div class="event-card">
+<h3>Sunday, February 8</h3>
+<p>Alpine Downhill (Women)</p>
+<p>XC Ski Skiathlon (Men)</p>
+<p>Snowboard Parallel GS</p>
+<p>Biathlon Mixed Relay</p>
+<p>Curling vs Sweden & Korea</p>
+<p>Speed Skating 5000m</p>
+<p>Figure Skating Free Skates</p>
+</div>
+
+<!-- FEB 9 -->
+<div class="event-card">
+<h3>Monday, February 9</h3>
+<p>Curling vs Switzerland</p>
+<p>Freestyle Slopestyle Final</p>
+<p>Luge Singles Run</p>
+<p>Speed Skating 1000m</p>
+<p>Ice Dance Rhythm</p>
+<p>Women’s Hockey vs Czechia</p>
+</div>
+
+<!-- FEB 10 -->
+<div class="event-card">
+<h3>Tuesday, February 10</h3>
+<p>XC Ski Sprint Qualifiers</p>
+<p>Alpine Team Combined</p>
+<p>Short Track Heats</p>
+<p>Moguls Qualification</p>
+</div>
+
+<!-- FEB 16 -->
+<div class="event-card">
+<h3>Monday, February 16</h3>
+<p>Curling (Men & Women)</p>
+<p>Alpine Slalom</p>
+<p>Bobsleigh Heats</p>
+<p>Short Track Events</p>
+<p>Big Air Final</p>
+<p>Pairs Free Skate</p>
+<p>Women’s Hockey Semifinal</p>
+</div>
+
+<!-- FEB 17 -->
+<div class="event-card">
+<h3>Tuesday, February 17</h3>
+<p>Men’s Hockey Qualification</p>
+<p>Curling vs Sweden</p>
+</div>
+
+<!-- FEB 18 -->
+<div class="event-card">
+<h3>Wednesday, February 18</h3>
+<p>Curling (Men & Women)</p>
+<p>Men’s Hockey Quarterfinal</p>
+</div>
+
+<!-- FEB 19 -->
+<div class="event-card">
+<h3>Thursday, February 19</h3>
+<p>Women’s Hockey Medal Games</p>
+</div>
+
+<!-- FEB 20 -->
+<div class="event-card">
+<h3>Friday, February 20</h3>
+<p>Men’s Hockey Semifinals</p>
+</div>
+
+<!-- FEB 21 -->
+<div class="event-card">
+<h3>Saturday, February 21</h3>
+<p>Men 50km XC Ski</p>
+<p>Men’s Hockey Bronze Game</p>
+</div>
+
+<!-- FEB 22 -->
+<div class="event-card">
+<h3>Sunday, February 22</h3>
+<p>Women 50km XC Ski</p>
+<p>Men’s Hockey Gold Game</p>
+<p>Closing Ceremony</p>
+</div>
+
+</div>
+</section>
+
+<section id="medals" class="section">
+<h2>🥇 Medal Tracker</h2>
+
+<table class="medal-table">
+<tr>
+<th>Sport</th>
+<th>Gold</th>
+<th>Silver</th>
+<th>Bronze</th>
+</tr>
+<tr>
+<td>Ice Hockey</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Speed Skating</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Alpine Skiing</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</table>
+
+</section>
+
+<footer>
+<p>© 2026 Team Canada Olympic Tracker | Made with 🍁 in Canada</p>
+</footer>
+
+</body>
+</html>
